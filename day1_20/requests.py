@@ -1,3 +1,6 @@
+"""
+
+
 import requests
 import urllib.parse
 pa1={
@@ -18,3 +21,18 @@ r2=requests.get(url2)
 
 print(r1.status_code)
 print(r2.status_code)
+"""
+
+
+def abc(number):
+    if number<=0:
+        return 0
+    elif number==1:
+        return 1
+    elif number==2:
+        return 2
+    else:
+        return abc(number-1)+abc(number-2)
+
+if __name__=='__main__':
+    print(abc(4.5))
